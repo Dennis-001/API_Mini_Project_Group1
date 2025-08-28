@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Cart page</title>
+  <style>
+     @media all{
+  
+  nav {
+    heihht:40px;
+    min-width:100%;
+    left:0; 
+  }
+   .b
+     {
+      position:relative;
+      padding-left: 10px;
+      padding-right:10px;
+      top:0px;
+      
+      height:100px;
+      bottom:153px;
+      
+   } 
+   .c{
+    position:relative;
+    padding-left:10px;
+    padding-right:10px;
+    left:40%;
+    bottom:150.8px;
+    height:100px;
+    
+   }
+   ul{
+    list-style-type: none;
+   }
+form{
+  border: solid;
+  border-width: 2px;
+  position-element: center; 
+  background-color:#9FCACA;
+  }
+   body{
+    background-color:#6aa3a3;
+    width: 100vw; /* Occupy full viewport width */
+    min-height: 100vh; /* Ensure body is at least full viewport height */
+   }
+   h1{
+    position:relative;
+    width:100%; 
+    font-size: 3rem; /* Scales with root font size */
+   }
+   .e{
+      position:relative;
+      padding-left:10px;
+      padding-right:10px;
+      top:0px;
+      width:100%;
+      height:50px;
+      bottom:153px;
+      background-color:#D3E9E9;
+   
+  }
+   h1{ position:relative;
+      padding-left:40px;
+      top:0px;
+      width:wrap-content;
+      height:wrap-content;
+      bottom:153px;
+    background-color:#D3E9E9;
+  }
+ .f{
+   position:relative;
+   left:250px;
+   width:120px;
+   bottom:20%;
+   padding-left:10px;
+  }
+  .g{
+   position:relative;
+   left:350px;
+   width:45px;
+   bottom:60%;
+   right:10px;
+   
+  }
+  .i{
+    width:45px;
+    padding-right:10px;
+    padding-left:10px;
+    right:1px;
+  }
+  .h{
+    padding-top:5px;
+     padding-left:5px;
+     padding-right:5px;
+     padding-bottom:5px;
+      border-width:10px;
+        }
+  
+   
+  }
+  </style>
+</head>
+<!DOCTYPE HTML>
+<html>
+  <head> 
+    <title>Product</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  </head>
+<body>
+ <nav>
+  <ul class="e">
+   <li class="i"><a href="">Home<a></li>
+   <li class="f"><button>Add Product</button></li>
+   <li class="g"><button>cart</button></li>
+  </ul>
+ </nav>
+  <h1>
+    Cart page
+  </h1>
+  <form  method="GET">
+    <label class="b">Product</label>
+    <ul class="b">
+      {%for products in product%}
+     <li>{{product}}</li></br>
+      {%end }}
+     <li>Total</li>
+     </ul>
+   
+    
+    <label class="c">Price</label></br>
+     <ul class="c">
+       {%for products in product%}
+      <li>{{product}}</li></br>
+       {%end }
+      <li>{{Total}}</li>
+     </ul>
+    <input class="h" type="submit" value="Checkout">
+  </form>
+</body>
+   
+</html>

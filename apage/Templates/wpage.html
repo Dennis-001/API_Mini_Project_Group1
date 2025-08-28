@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Welcome</title>
+  <style>
+  @media all{
+   h1
+    { position:relative;
+      padding-left:10px;
+      padding-right:10px;
+      top:0px;
+      width:wrap-content;
+      height:wrap-content;
+      bottom:153px;
+      background-color:#D3E9E9;}
+  .f
+    {
+   position:relative;
+   left:250px;
+   width:120px;
+   bottom:20%;
+   padding-left:10px;
+   
+  }
+  .g{
+   position:relative;
+   left:350px;
+   width:45px;
+   bottom:60%;
+   right:10px;
+  }
+  .i{
+    width:45px;
+    padding-right:10px;
+    padding-left:10px;
+    right:1px;
+  }
+  ul{
+    list-style-type:none;
+  }
+nav {
+    heihht:40%;
+    min-width:100%;
+    left:0;
+    
+  }
+  body{
+    background-color: #6aa3a3;
+    
+  }
+    .e{
+      position:relative;
+      padding-left:10px;
+      padding-right:10px;
+      top:0px;
+      min-width:100%;
+      height:50px;
+      bottom:153px;
+      background-color:#D3E9E9;
+   
+  }
+   form{
+  border: solid;
+  border-width: 2px;
+  position-element: center; 
+  background-color:#9FCACA;
+  }
+  }
+  </style>
+</head>
+<body>
+  
+  <nav>
+  <ul class="e">
+   <li class="i"><a href="">Home<a></li>
+   <li class="f"><button>Add Product</button></li>
+   <li class="g"><button>cart</button></li>
+  </ul>
+ </nav>
+    <h1>
+     Welcome to the Thrift Store
+  </h1>
+    <form method="GET">
+    <ul>
+      {{%for products in product%}}
+      <li></li>
+      {{%end for%}}
+    </ul>
+    <input type="submit" name="Proceed to view Cart">
+    </form>
+</body>
+</html>
