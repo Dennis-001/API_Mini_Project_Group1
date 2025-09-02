@@ -96,13 +96,14 @@ nav {
   </ul>
  </nav>
   <h1>Add product to the ThriftStore</h1>
-  <form action="" method="POST">
+  <form action="{%url 'produce_addittion'%}" method="POST">
+   {% csrf_token %}
     <label class="a">Product Name</label>
-    <input class="b" id="Firstname" type="text" name="username"></br>
+    <input class="b" id="pname" type="text" name="username"></br>
     <label class="c">Product Price</label>
-    <input class="b"id="email" type="text" name="email"></br>
+    <input class="b"id="pprice" type="text" name="email"></br>
     <label class="d">Procudt Product type</label>
-    <select class="b" name = "dropdown">
+    <select class="b" id="pcartegory" name = "dropdown">
          <option value = "Maths" selected>Book</option>
          <option value = "Physics">Clothes</option>
          <option value = "Chemistry">Item</option>
