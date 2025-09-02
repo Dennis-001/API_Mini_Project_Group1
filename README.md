@@ -1,3 +1,4 @@
+Individual Mini-Project for 089521
 Packages installation, since I am coding/programming with a phone, python, django,virtual environment and git packages had to be installed.
 The virtual environment was created.
 Django project was Created followed by the relevant application, in the virtual environment.
