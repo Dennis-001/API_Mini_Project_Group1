@@ -1,12 +1,12 @@
 from rest_framework import serializers
-from .models import produce,cart
+from .models import Product,cartd
 
- class produceSerializer(serializer.ModelSerializer):
+class produceSerializer(serializers.ModelSerializer):
      class Meta:
-          model=produce
+          model=Product
           fields='_all_'
- class cartSerializer(serializer.ModelSerializer):
+class cartSerializer(serializers.ModelSerializer):
      class Meta:
-          model=cart
+          model=cartd
           fields='_all_'
 
